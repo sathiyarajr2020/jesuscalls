@@ -1,0 +1,51 @@
+.footer {
+    background-color: #57a6f5; /* Light gray background */
+    padding: 20px; /* Padding around the footer */
+    border-top: 1px solid #e9ecef; /* Top border for separation */
+  }
+  
+  .footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between left and right sections */
+    max-width: 1500px; /* Max width for content */
+    margin: 0 auto; /* Center the footer content */
+  }
+  
+  .footer-left {
+    flex: 1; /* Allow this section to take available space */
+    padding-right: 20px; /* Space between sections */
+  }
+  
+  .footer-left .logo-image {
+    max-width: 150px; /* Logo size */
+    margin-bottom: 15px; /* Space below the logo */
+  }
+  
+  .footer-left p {
+    font-size: 0.9em; /* Smaller text size for description */
+    line-height: 1.5; /* Line height for better readability */
+    color: #333; /* Dark text color */
+  }
+  
+  .footer-right {
+    flex: 1; /* Allow this section to take available space */
+    padding-left: 20px; /* Space between sections */
+    border-left: 1px solid #e9ecef; /* Left border for separation */
+  }
+  
+  .footer-right h2 {
+    font-size: 1.2em; /* Larger font size for headings */
+    color: #6c757d; /* Gray color for headings */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .footer-right p {
+    font-size: 0.9em; /* Smaller text size for paragraphs */
+    line-height: 1.5; /* Line height for better readability */
+    color: #555; /* Darker gray for contact details */
+  }
+  
+  .footer-right strong {
+    color: #333; /* Darker text color for strong tags */
+  }
+  

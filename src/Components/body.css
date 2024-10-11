@@ -1,0 +1,111 @@
+.features-section {
+    padding: 20px;
+    background-color: #2c3e50;
+    text-align: center;
+  }
+  
+  .features-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .features-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .feature-box {
+    flex: 0 0 300px;
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    scroll-snap-align: start;
+  }
+  
+  .feature-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .para {
+    color: #ecf0f1;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .modal-content p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* For scrolling if modal content overflows */
+  .modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  /* Add some style for the scrollbar */
+  .modal-content::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .modal-content::-webkit-scrollbar-thumb {
+    background-color: #7f8c8d;
+    border-radius: 5px;
+  }
+  

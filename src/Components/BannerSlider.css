@@ -1,0 +1,26 @@
+/* Center and set the image dimensions */
+.slick-slide img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 1350px; /* Max width of the image */
+    max-height: 387px; /* Max height of the image */
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    margin: 0 auto; /* Center the image */
+}
+
+/* Optional: Adjust the dots position */
+.slick-dots {
+    bottom: 15px; /* Adjust position of dots if needed */
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+    font-size: 20px; /* Adjust the size of arrows */
+}
+
+/* Optional: Hide the arrows on smaller screens */
+@media (max-width: 768px) {
+    .slick-prev, .slick-next {
+        display: none;
+    }
+}

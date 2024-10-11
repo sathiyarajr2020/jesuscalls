@@ -1,0 +1,51 @@
+.latest-songs-container {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #5e2d68;
+    margin-bottom: 20px;
+  }
+  
+  .songs-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .song-card {
+    width: calc(20% - 20px); /* Each card will take 20% of the width minus the gap */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .song-card iframe {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .song-card p {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .song-card {
+      width: calc(50% - 20px); /* For tablets or small screens, two cards per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .song-card {
+      width: calc(100% - 20px); /* For mobile screens, one card per row */
+    }
+  }
+  

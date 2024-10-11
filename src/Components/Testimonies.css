@@ -1,0 +1,119 @@
+.testimonials-section {
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: purple;
+  }
+  
+  .testimonials-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  .testimonial-box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1;
+    min-width: 300px; /* Adjust as needed */
+    max-height: 300px; /* Adjust height */
+    overflow: hidden; /* Prevent overflow */
+    cursor: pointer; /* Show pointer on hover */
+    transition: transform 0.2s;
+  }
+  
+  .testimonial-box:hover {
+    transform: scale(1.02);
+  }
+  
+  .testimonial-content {
+    display: flex; /* Align image and text horizontally */
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .testimonial-image {
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Space between image and text */
+  }
+  
+  .testimonial-details {
+    flex-grow: 1; /* Allow this section to take the remaining space */
+  }
+  
+  .testimonial-details h4 {
+    margin: 0;
+    color: purple;
+  }
+  
+  .testimonial-details span {
+    font-size: 0.9em;
+    color: gray;
+  }
+  
+  .testimonial-details p {
+    margin: 10px 0;
+    height: 80px; /* Limit height for scrollbar */
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+  
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 400px; /* Adjust width as needed */
+    max-height: 80vh; /* Limit height */
+    overflow-y: auto; /* Enable scrolling if content is too long */
+    position: relative; /* Position relative for close symbol */
+  }
+  
+  .popup-content h3 {
+    margin: 10px 0 5px;
+    color: purple;
+  }
+  
+  .popup-content span {
+    display: block;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  
+  .popup-content p {
+    margin: 10px 0;
+  }
+  
+  .popup-image {
+    width: 80px; /* Adjust size for popup */
+    height: 80px; /* Adjust size for popup */
+    border-radius: 50%; /* Make it circular */
+    margin-bottom: 10px;
+  }
+  
+  .close-symbol {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: red; /* Close symbol color */
+  }
+  
